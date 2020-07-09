@@ -1,12 +1,14 @@
 @component('mail::message')
-# Introduction
+# Hello, Febri Hidayan
 
-The body of your message.
+Selamat Anda berhak mendapatkan source code dari kami, silakan klik tautan berikut.
 
-@component('mail::button', ['url' => ''])
-Button Text
+@component('mail::button', [
+    'url' => 'https://github.com/febrihidayan/cara-kirim-email-di-laravel'
+])
+Github
 @endcomponent
 
-Thanks,<br>
+Terimakasih,<br>
 {{ config('app.name') }}
 @endcomponent
