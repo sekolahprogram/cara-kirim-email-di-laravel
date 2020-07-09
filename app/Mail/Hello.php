@@ -28,6 +28,7 @@ class Hello extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.hello');
+        return $this->subject('Hello, Febri Hidayan')
+                    ->markdown('emails.hello');
     }
 }
